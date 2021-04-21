@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1 id="title">Encuesta de Satisfaccion</h1>
+            <p id="description">Encuesta para conocer su nivel de Satisfaccion</p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label for="name" id="name-label">Nombre Completo</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu Nombre Completo" required > 
+            </div>
+            <div id="form-group">
+                <label for="email" id="email-label">E-Mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu E-Mail" required > 
+            </div>
+            <div id="form-group">
+                <label for="number" id="number-label">Nivel de Satisfaccion del servicio(1 a 5)</label>
+                <p>Teniendo en Cuenta que: 1 (Muy Insastifecho), 2(Insastifecho), 3(Me es Indiferente), 4(Satisfecho), 5(Muy Satisfecho)</p>
+                <input type="number" name="number" id="number" class="form-control" min="1" max="5" placeholder="Nivel de Satisfaccion" required > 
+            </div>
+            <div id="form-group">
+                <p>¿Que mascota Adoptaste?</p>
+                <select name="preference" id="dropdown" class="form-control", required>
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <p>¿En un futuro cercano Adoptarias otras mascota?</p>
+                <p><input type="radio" name="user-choise" class="input-radio" value="Si" checked>Si, Adoptaria otra mascota</p>
+                <p><input type="radio" name="user-choise" class="input-radio" value="Tal vez" checked>Tal vez</p>
+                <p><input type="radio" name="user-choise" class="input-radio" value="No" checked>No Adoptaria otra mascota</p>
+            </div>
+            <div id="form-group">
+                <p>¿Que consideras Importante antes de Adoptar a una Mascota?</p>
+                <label><input type="checkbox" name="user-prefer" value="salud de la mascota" class="input-checkbox">Salud de la Mascota</label>
+                <label><input type="checkbox" name="user-prefer" value="raza de la mascota" class="input-checkbox">Raza de la mascota</label>
+                <label><input type="checkbox" name="user-prefer" value="aspecto fisico" class="input-checkbox">Aspecto Fisico</label>
+                <label><input type="checkbox" name="user-prefer" value="comportamiento" class="input-checkbox">Comportamiento</label>
+            </div>
+            <div id="form-group">
+                <p>¿Sugerencias para mejorar para mejorar nuestro servicio?</p>
+                <textarea name="tips" id="input-tips" placeholder="Puedes ingresar tu Sugerencia Aqui!" ></textarea>
+            </div>
+            <div id="form-group">
+                <button type="submit" id="submit" class="submit-btn">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
