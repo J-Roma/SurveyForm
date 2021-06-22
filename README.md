@@ -36,7 +36,7 @@ npm start
 ### Computador
 A continuación se presenta la vista de carga en un pc
 <br></br>
-<img src='https://i.imgur.com/JGCCejC.png' alt='documentacion' width=50%>
+<img src='https://i.imgur.com/mqG6rV7.png' alt='documentacion' width=50%>
 
 ## :man_technologist: Autor
 
